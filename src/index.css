@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.mainPage {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: rgba(21, 21, 21, 0.8);
+  color: rgba(224, 224, 224, 0.9);
+}
+
+.playList {
+  width: 60%;
+  padding: 15px;
+}

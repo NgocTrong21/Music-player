@@ -1,0 +1,30 @@
+.option:hover {
+    color: #c2c2c2;    
+}
+.songsPlaylist {
+    overflow: scroll;
+    height: 45%;
+    padding-right: 5px;
+}
+.songsPlaylist::-webkit-scrollbar {
+    width: 2px;
+}
+.songsPlaylist::-webkit-scrollbar-thumb {
+    background-color: lightgrey;
+}
+.song{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border-bottom: 2px solid;
+    color: #838383;
+}
+.song.active{
+    color: whitesmoke;
+}
+.song:hover{
+    color: whitesmoke;
+}

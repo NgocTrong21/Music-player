@@ -1,0 +1,84 @@
+{
+    "songs": [
+      {
+        "id": 1,
+        "name": "A Thoundsand Years",
+        "singer": "Christina Perri",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508381/my%20images/music%20images/a_thoundsand_years_wdwyby.jpg",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666522437/my%20images/song%27s%20poster/a-thound-sand-years-poster_o4cqa9.jpg",
+        "path": "./songs/A Thousand Years - Christina Perri.mp3"
+      },
+      {
+        "id": 2,
+        "name": "Arcade",
+        "singer": "Duncan Laurence",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666519617/my%20images/music%20images/arcade_mhjb4o.jpg",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666520294/my%20images/song%27s%20poster/arcade-poster_rvtxam.jpg",
+        "path": "./songs/Arcade - Duncan Laurence.mp3"
+      },
+      {
+        "id": 3,
+        "name": "Bird Set Free",
+        "singer": "Sia",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508380/my%20images/music%20images/bird_set_free_afl5ne.jpg",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666520193/my%20images/song%27s%20poster/bird-set-free-poster2_sam1bo.jpg",
+        "path": "./songs/Bird Set Free - Sia.mp3"
+      },
+      {
+        "id": 4,
+        "name": "Chandelier",
+        "singer": "Sia",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508381/my%20images/music%20images/chandelier_ufrxrm.jpg",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666524339/my%20images/song%27s%20poster/chandelier-poster2_h4xluu.jpg",
+        "path": "./songs/Chandelier Piano Version_ - Sia.mp3"
+      },
+      {
+        "id": 5,
+        "name": "Listen",
+        "singer": "Beyonce",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508382/my%20images/music%20images/listen_bubklc.jpg",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666520804/my%20images/song%27s%20poster/listen-poster_y3rnaq.jpg",
+        "path": "./songs/Listen - Beyonce.mp3"
+      },
+      {
+        "id": 6,
+        "name": "Lovely",
+        "singer": "Billie Eilish",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508381/my%20images/music%20images/lovely_iws4jz.jpg",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666521092/my%20images/song%27s%20poster/lovely-poster_zvukkr.jpg",
+        "path": "./songs/Lovely - Billie Eilish_ Khalid.mp3"
+      },
+      {
+        "id": 7,
+        "name": "Marvin Gaye",
+        "singer": "Charlie Puth",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508384/my%20images/music%20images/marvin_gaye_ossblr.png",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666523522/my%20images/song%27s%20poster/marvin-gaye-poster_xnyh4a.jpg",
+        "path": "./songs/Marvin Gaye - Charlie Puth_ Meghan Train.mp3"
+      },
+      {
+        "id": 8,
+        "name": "Never Enough",
+        "singer": "Loren Allred",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508386/my%20images/music%20images/never_enough_f06tfx.png",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666521827/my%20images/song%27s%20poster/never-enough-poster_hkutir.jpg",
+        "path": "./songs/Never Enough - Loren Allred.mp3"
+      },
+      {
+        "id": 9,
+        "name": "Photograph",
+        "singer": "Ed Sheeran",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508389/my%20images/music%20images/photograph_as8u4c.png",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666521966/my%20images/song%27s%20poster/photograph-poster_kqgjxo.jpg",
+        "path": " ./songs/Photograph - Ed Sheeran.mp3"
+      },
+      {
+        "id": 10,
+        "name": "Rolling In The Deep",
+        "singer": "Adele",
+        "image": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508385/my%20images/music%20images/rolling_in_the_deep_jtiobr.jpg",
+        "poster": "https://res.cloudinary.com/djqqlrhi0/image/upload/v1666522195/my%20images/song%27s%20poster/rolling-in-the-deep-poster_bj4u49.jpg",
+        "path": "./songs/Rolling In The Deep - Adele.mp3"
+      }
+    ]
+  }

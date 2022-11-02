@@ -1,0 +1,111 @@
+.dashboard .title {
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+    font-style: italic;
+}
+.dashboard .songName{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.cd {
+    width: 120px;
+    margin: auto;
+}
+.cdThumb {
+    padding-top: 100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+.progress input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1px;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.progress input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: aqua;
+    cursor: pointer;
+}
+.progress input:hover{
+    opacity: 1;
+}
+.progress {
+    padding: 5px;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 60px 0 60px 0;
+}
+.btnControl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.btnControl .btnPlay{
+    border: 2px solid;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-left: 15.5px;
+    padding-top: 12px;
+}
+
+.btnControl .btnPrev {
+    border: 2px solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.btnControl .btnNext{
+    border: 2px solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.btnBonus {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnBonus .btnActive{
+    color: aqua;
+}
+.btn .iconPause {
+    display: none;
+}
+.btnPlay {
+    font-size: 30px;
+}
+.btn.playing .iconPause {
+    display: inline-block;
+}
+.btn.playing .iconPlay {
+    display: none;
+}
+.btn:hover {
+    color: #838383;
+}

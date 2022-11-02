@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Dashboard from "./components/Dashboard/Dashboard";
+import SongPlaylist from "./components/SongPlaylist/SongPlaylist";
+import Poster from "./components/Poster/Poster";
+import GlobalStyles from "./components/GlobalStyles/GlobalStyles";
+import Audio from "./components/Audio/Audio";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalStyles>
+      <div className="App">
+        <img
+          src="https://res.cloudinary.com/djqqlrhi0/image/upload/v1666508387/my%20images/music%20images/pexels-sanaan-mazhar-3075993_cfumwf.jpg"
+          alt=""
+        />
+        <div className="mainPage">
+          <div className="playList">          
+            <Dashboard />
+            <Audio/>
+            <SongPlaylist />
+          </div>
+          <Poster />
+        </div>
+      </div>
+    </GlobalStyles>
   );
 }
 
