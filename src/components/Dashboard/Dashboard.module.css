@@ -106,6 +106,9 @@
 .btn.playing .iconPlay {
     display: none;
 }
-.btn:hover {
+.btnControl .btn:hover {
     color: #838383;
+}
+.btnBonus .btn:hover {
+    color: aqua;
 }

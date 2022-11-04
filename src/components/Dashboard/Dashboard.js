@@ -1,6 +1,6 @@
 // import React from 'react'
 import clsx from 'clsx'
-import { useContext} from 'react';
+import { useContext, useEffect, useRef} from 'react';
 import style from'./Dashboard.module.css'
 import {StoreContext, actions} from '../../store'
 
@@ -9,6 +9,8 @@ function Dashboard() {
     const songs = state.dataSongs;
     const currentSong = state.currentSong;
     const songLength = state.dataSongs.length;
+    const cdThumb = useRef();
+    const cdThumbRote = useRef();
     //next song
     const nextSong = () => {
       let newId;
@@ -48,7 +50,30 @@ function Dashboard() {
       dispatch(actions.saveHeardSongs(newId))
       dispatch(actions.setPlaying(true))
     } 
+    
+    //animate cd
+    useEffect(() => {
+      cdThumbRote.current = cdThumb.current.animate([
+        {
+            transform: 'rotate(360deg)'
+        }
+      ],
+      {
+          duration: 10000,
+          iterations: Infinity
+      })
+    }, [])
 
+    useEffect(() => {
+      if(state.playing){
+        cdThumbRote.current.play();
+      }
+      else {
+        cdThumbRote.current.pause();
+      }
+    }, [state.playing])
+    
+    
     //format time
     const timeFormat = (time) => {
         let minute;
@@ -75,6 +100,7 @@ function Dashboard() {
             </div>
             <div className={style.cd}>
               <div 
+                ref={cdThumb}
                 className={style.cdThumb}
                 style = {{backgroundImage: `url(${currentSong.image})`}}
               ></div>

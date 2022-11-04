@@ -8,9 +8,11 @@ function Audio() {
   const songLength = state.dataSongs.length;
   const songs = state.dataSongs;
   const currentSong = state.currentSong;
+  
   //next song
   const nextSong = () => {
     let newId;
+
     if (state.isRandom) {
       do {
         newId = 1 + Math.floor(Math.random() * songLength);
@@ -26,40 +28,43 @@ function Audio() {
     dispatch(actions.setPlaying(true));
   };
 
-  useEffect(() => {
-    const audio = audioRef.current;
-    audio.addEventListener("ended", () => {
-      if (!state.isRepeat) {
-        debugger;
-        nextSong();
-      }
-    });
-    return audio.removeEventListener("ended", () => {
+  //handle repeat
+  const handleRepeat = () => {
+    if (state.isRepeat) {
+      audioRef.current.play();
+    } else {
       nextSong();
-    });
-  }, [currentSong || state.isRepeat]);
+    }
+  };
 
   useEffect(() => {
-    const audio = audioRef.current;
+    audioRef.current.addEventListener("ended", handleRepeat);
+    return () => {
+      audioRef.current.removeEventListener("ended", handleRepeat);
+    };
+  }, [currentSong, state.isRepeat]);
+
+  useEffect(() => {
     if (state.playing) {
-      audio.play();
+      audioRef.current.play();
     } else {
-      audio.pause();
+      audioRef.current.pause();
     }
   }, [state.playing, state.currentSong]);
 
   useEffect(() => {
-    const audio = audioRef.current;
-    audio.addEventListener("timeupdate", () => {
-      dispatch(actions.setCurrentTime(Math.floor(audio.currentTime)));
+    audioRef.current.addEventListener("timeupdate", () => {
+      dispatch(
+        actions.setCurrentTime(Math.floor(audioRef.current.currentTime))
+      );
     });
-    audio.addEventListener("loadedmetadata", () => {
-      dispatch(actions.setDuration(audio.duration));
+    audioRef.current.addEventListener("loadedmetadata", () => {
+      dispatch(actions.setDuration(audioRef.current.duration));
     });
   }, []);
   useEffect(() => {
     audioRef.current.currentTime = state.currentTime;
-  }, [state.isOnInput]);
+  }, [`${state.isOnInput}`]);
   return <audio ref={audioRef} src={state.currentSong.path}></audio>;
 }
 
